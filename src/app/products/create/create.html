@@ -1,0 +1,29 @@
+<div class="container mt-5">
+  <h1>Add new product</h1>
+
+  <form [formGroup]="form" (ngSubmit)="handleSubmit()">
+    <div class="form-group mb-3">
+      <label for="nom" class="form-label">Nom</label>
+      <input formControlName="nom" type="text" class="form-control" id="nom">
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="rix" class="form-label">prix</label>
+      <input formControlName="prix" type="number" class="form-control" id="prix">
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="description" class="form-label">Description</label>
+      <input formControlName="description" type="text" class="form-control" id="description">
+    </div>
+    <div class="form-group mb-3">
+      <label for="stock" class="form-label">Stock</label>
+      <input formControlName="stock" type="number" class="form-control" id="stock">
+    </div>
+    <div class="form-group mb-3">
+      <label for="categorie" class="form-label">Categorie</label>
+      <input formControlName="categorie" type="text" class="form-control" id="categorie">
+    </div>
+    <button type="submit" class="btn btn-primary">Envoyer</button>
+  </form>
+</div>

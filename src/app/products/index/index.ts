@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { ProductsInterface } from '../products-interface';
 import { Service } from '../service';
 
 @Component({
   selector: 'app-index',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './index.html',
   styleUrl: './index.css',
 })

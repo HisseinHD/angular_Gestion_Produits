@@ -44,7 +44,10 @@
             <h1>Bienvenue dans l'Application E-commerce</h1>
             <p>Gérez facilement vos produits : Ajout, Modification, Suppression, et mise à jour.</p>
             <button class="btn btn-light mt-3">
-                <i class="fas fa-plus me-2"></i>Ajouter un produit
+                <a class="nav-link" [routerLink]="['/products/create']">
+
+                    <i class="fas fa-plus me-2"></i>Ajouter un produit
+                </a>
             </button>
         </header>
 
