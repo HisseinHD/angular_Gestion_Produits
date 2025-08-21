@@ -26,8 +26,12 @@
                     <!-- <a  class="btn btn-info ">View</a> -->
                     <a [routerLink]="['/products/read/', product._id]" class="btn btn-info ">View</a>
 
-                    <!-- <a [routerLink]="['/book/create']" class="btn btn-warning">Edit</a>
-                    <a [routerLink]="['/book/create']" class="btn btn-danger">Delete</a>  -->
+                    <!-- <a [routerLink]="['/book/create']" class="btn btn-warning">Edit</a>-->
+                    <button (click)="deleteProduct(product._id)" class="btn btn-danger">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+
+
                 </td>
             </tr>
             }

@@ -48,5 +48,12 @@ export class Service {
   );
 }
 
-
+delete(id: string): Observable<any> {
+    return this.httpClient.delete(this.baseUrl + '/products/' + id).pipe(
+      catchError((error) => {
+        console.log(error);
+        return throwError(() => error);
+      })
+    );
+  }
 }

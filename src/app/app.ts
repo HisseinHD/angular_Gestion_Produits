@@ -8,5 +8,6 @@ import { RouterOutlet } from '@angular/router';
   styles: ``,
 })
 export class App {
+  
   protected readonly title = signal('angular_Gestion_Produits');
 }
