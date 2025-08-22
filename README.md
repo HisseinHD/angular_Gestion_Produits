@@ -2,7 +2,11 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.6.
 ```bash
-git clone 
+git clone git@github.com:HisseinHD/angular_Gestion_Produits.git
+
+cd angular_Gestion_Produits
+
+npm install
 ```
 ## Development server
 
