@@ -1,5 +1,9 @@
 <div class="container mt-5">
+    <div class="card-header bg-primary text-white text-center fs-4 fw-bold">
+        Liste des Produits
+    </div>
     <table class="table table-striped table-bordered">
+
         <thead>
             <tr>
                 <th scope="col">#</th>
@@ -17,10 +21,12 @@
             @for(product of products; track $index){
             <tr>
                 <th scope="row">{{product._id}}</th>
-                <td>{{product.nom}}</td>
-                <td>{{product.prix}}</td>
+                <td class="fw-semibold">{{product.nom}}</td>
+                <td><span class="badge bg-success fs-6">{{product.prix}} </span></td>
                 <td>{{product.description}}</td>
-                <td>{{product.stock}}</td>
+                <td><span class="badge bg-{{product.stock > 10 ? 'primary' : 'danger'}}">
+                    {{product.stock}}
+                </span></td>
                 <td>{{product.categorie}}</td>
                 <td id="actions">
                     <!-- <a  class="btn btn-info ">View</a> -->
@@ -32,6 +38,10 @@
                     </button>
 
 
+                    <!-- <a [routerLink]="['/book/create']" class="btn btn-warning">Edit</a>
+                    <a [routerLink]="['/book/create']" class="btn btn-danger">Delete</a>  -->
+                    <!-- <a class="btn btn-info ">View</a> -->
+                  
                 </td>
             </tr>
             }
