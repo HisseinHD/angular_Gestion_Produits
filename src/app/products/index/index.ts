@@ -40,6 +40,4 @@ export class Index {
     }
   }
 
-
-  
 }
