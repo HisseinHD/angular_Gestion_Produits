@@ -7,7 +7,7 @@ import { ProductsInterface } from './products-interface';
   providedIn: 'root',
 })
 export class Service {
-  private baseUrl = 'http://localhost:3000';
+  // private baseUrl = 'http://localhost:3000';
 
   httpOption = {
     headers: new HttpHeaders({
