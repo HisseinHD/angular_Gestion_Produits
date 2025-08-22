@@ -30,7 +30,7 @@
                 <td>{{product.categorie}}</td>
                 <td id="actions">
                     <!-- <a  class="btn btn-info ">View</a> -->
-                    <a [routerLink]="['/products/read/', product._id]" class="btn btn-info ">View</a>
+                    <a [routerLink]="['/products/read/', product._id]" class="btn btn-info "><i class="fa-regular fa-eye"></i></a>
 
                     <!-- <a [routerLink]="['/book/create']" class="btn btn-warning">Edit</a>-->
                     <button (click)="deleteProduct(product._id)" class="btn btn-danger">
@@ -48,4 +48,3 @@
         </tbody>
     </table>
 </div>
-
