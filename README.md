@@ -1,7 +1,9 @@
 # AngularGestionProduits
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.6.
-
+```bash
+git clone 
+```
 ## Development server
 
 To start a local development server, run:
@@ -57,3 +59,9 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+### Capture d'ecran 
+<img width="1376" height="900" alt="Capture d’écran du 2025-08-22 17-00-36" src="https://github.com/user-attachments/assets/67171eea-5e38-43a4-b3e1-4adee114e8ba" />
+<img width="1383" height="946" alt="Capture d’écran du 2025-08-22 17-00-54" src="https://github.com/user-attachments/assets/94fef8a1-a005-49d1-88d9-b0331ad943fa" />
+
+
