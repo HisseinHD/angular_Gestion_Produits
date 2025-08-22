@@ -56,4 +56,24 @@ delete(id: string): Observable<any> {
       })
     );
   }
+update(id: string, product: ProductsInterface): Observable<any> {
+    return this.httpClient.patch(
+      this.baseUrl + '/products/' + id,
+      product,
+      this.httpOption
+    ).pipe(
+      catchError((error) => {
+        console.log(error);
+        return throwError(() => error);
+      })
+    );
+  }
+ 
+
 }
+
+
+
+
+
+

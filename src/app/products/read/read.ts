@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-read',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './read.html',
   styleUrl: './read.css'
 })

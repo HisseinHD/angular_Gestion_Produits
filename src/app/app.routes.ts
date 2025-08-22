@@ -7,6 +7,7 @@ import { Index } from './products/index/index';
 
 import { Component } from '@angular/core';
 import { Create } from './products/create/create';
+import { Update } from './products/update/update';
 
 export const routes: Routes = [
   { path: '', component: Acceuil },
@@ -15,4 +16,5 @@ export const routes: Routes = [
   { path: 'products/delete', component: Delete },
   { path: 'products/index', component: Index },
   { path: 'products/create', component: Create },
+  { path: 'products/update/:id', component: Update },
 ];

@@ -1,0 +1,28 @@
+<div class="container mt-4">
+  <h2>Modifier le produit</h2>
+  <form [formGroup]="form" (ngSubmit)="handleUpdate()">
+    <div class="mb-3">
+      <label>Nom</label>
+      <input type="text" formControlName="nom" class="form-control">
+    </div>
+    <div class="mb-3">
+      <label>Prix</label>
+      <input type="number" formControlName="prix" class="form-control">
+    </div>
+    <div class="mb-3">
+      <label>Description</label>
+      <textarea formControlName="description" class="form-control"></textarea>
+    </div>
+    <div class="mb-3">
+      <label>Stock</label>
+      <input type="number" formControlName="stock" class="form-control">
+    </div>
+    <div class="mb-3">
+      <label>Catégorie</label>
+      <input type="text" formControlName="categorie" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-success">
+      <i class="fas fa-save"></i> Enregistrer
+    </button>
+  </form>
+</div>
